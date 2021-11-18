@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Practical</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(31, 27, 27, 0.5), rgba(37, 33, 33, 0.5)), url("./image.jfif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            height: 50px;
+            background-color: black;
+            opacity: 80%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 150px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        a {
+            color: white;
+            padding: 0 10px;
+            text-decoration: none;
+            line-height: 50px;
+        }
+
+        header .contact i {
+            color: #2dd64c;
+            padding: 0 10px;
+        }
+
+        img {
+            height: 60px;
+            width: 80px;
+        }
+
+        header .icon a:hover,
+        section ul li a:hover,
+        section ul li a select:hover {
+            color: #2dd64c;
+        }
+
+        section {
+            padding: 0 150px;
+            height: 93vh;
+        }
+
+        section .nav {
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        section .nav ul li {
+            line-height: 70px;
+            padding: 0 10px;
+        }
+
+        section ul li p {
+            color: white;
+            font-size: 40px;
+        }
+
+        section select {
+            background-color: transparent;
+            border: none;
+            font-size: medium;
+            color: white;
+        }
+
+        section span {
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            background-color: #2dd64c;
+        }
+
+        section hr {
+            background-color: gray;
+            color: gray;
+            border-width: 0;
+            height: 2px;
+        }
+
+        section .content {
+            margin-top: 300px;
+            color: white;
+            width: 40%
+        }
+
+        section B {
+            font-size: 50px;
+            letter-spacing: 1px;
+            font-weight: 100;
+        }
+
+        section .content p {
+            padding: 10px 0;
+        }
+
+        section .button ul li {
+            line-height: 50px;
+            margin-right: 10px
+        }
+
+        section .content .button .play {
+            background-color: transparent;
+            border: 2px solid white;
+        }
+
+        span:hover,
+        section .content .button .play:hover {
+            background-color: white;
+            color: black;
+            border-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="icon">
+            <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+            </li>
+        </ul>
+        <ul class="contact">
+            <li>
+                <a><i class="fa fa-envelope"></i><span>info@docmed.com</span></a>
+            </li>
+            <li>
+                <a><i class="fa fa-phone"></i><span>1601-609 6780</span></a>
+            </li>
+        </ul>
+
+    </header>
+    <section>
+        <div class="nav">
+            <ul>
+                <li><img src="./logo.png" alt=""></li>
+                <li>
+                    <p>Busicol</p>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a><select name="Blog" id="Blog">
+                            <option value="Blog">Blog</option>
+                            <option value="v1">v1</option>
+                            <option value="v2">v2</option>
+                        </select></a></li>
+                <li><a><select name="Pages" id="Pages">
+                            <option value="Pages">Pages</option>
+                            <option value="v1">v1</option>
+                            <option value="v2">v2</option>
+                        </select></a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                <li><span>Get a Quote</span></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="content">
+            <B>
+                Grow Big With Musical Business
+            </B>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                sit , voluptatibus accusamus repellendus, hic modi. </p>
+            <div class="button">
+                <ul>
+                    <li><span> Our Services</span></li>
+                    <li><span class="play"><i class="fa fa-play"></i> See How It Work</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
